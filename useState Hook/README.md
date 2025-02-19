@@ -1,1 +1,1 @@
-# Here I will tell you about the useState hook which is teh starting point of React Hooks!
+# Here I will tell you about the useState hook which is the starting point of React Hooks!
