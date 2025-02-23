@@ -6,7 +6,7 @@ import { createContext } from 'react'
 const UserContext = createContext()
 
 function App() {
-  const [user, setuser] = useState({name:"Nikhil"})
+  const [user, setuser] = useState({name:"Legend"})
 
   return (
     <>
