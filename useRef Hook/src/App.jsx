@@ -1,35 +1,37 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import { useRef } from 'react';
+import StopWatch from './demo/stopWatch';
 
-function App() {
-  const [count, setCount] = useState(0)
+const App = () => {
+
+  let btnRef = useRef();
+
+  const[count,setCount] = useState(0);
+
+  const increment = () =>{
+      setCount(count+1);
+  }
+
+  const changeBG = ()=>{
+    btnRef.current.style.backgroundColor = "orange"
+    btnRef.current.style.color = "white"
+  }
 
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+    {/* <button onClick={increment} ref={btnRef}>Increase</button>
+    <br></br>
+    <br></br>
+    <button onClick={changeBG}>Change upper color</button>
+    <br></br>
+    <h2>Value:{count}</h2> */}
+    <StopWatch/>
     </>
   )
 }
 
 export default App
+
+// useRef won't re-render the webpage and persists the given value
+// It's mostly used with accessing and manipulation of the DOM Elements!
