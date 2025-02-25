@@ -41,6 +41,10 @@ const router = createBrowserRouter([
         <ParamComponent />
       </div>
     ),
+  },
+  {
+    path: "*",
+    element: <h1>404 - Error Found</h1>,
   }
 ]);
 
