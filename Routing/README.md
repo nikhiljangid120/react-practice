@@ -8,7 +8,7 @@ react-router-dom is a library that enables **navigation & routing** in React 
 
 ### 🔹 Installation
 
-npm install react-router-dom
+npm install react-router-dom 
 
 📌 1️⃣ useParams – Dynamic Routing 🔍 Application: Fetching dynamic data from URLs. 💡 Use Case: Profile pages, product details. 🔥 Example: Extracting a User ID from the URL
 
