@@ -1,6 +1,6 @@
 # Understanding and Using `useCallback` Hook in React
 
-## 📌 What is `useCallback`?
+## 📌 What is `useCallback`? 
 `useCallback` is a React Hook that **memoizes functions** to prevent unnecessary re-creations during re-renders. It is especially useful when passing functions as props to child components.
 
 ---
