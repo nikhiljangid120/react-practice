@@ -7,7 +7,7 @@ export const App = () => {
     const [count, setCount] = useState(0);
 
     useEffect(() => {
-        // alert(`I will run on each render`);
+        // alert(`I will run on each render successfully`);
     }, []);
 
     function handleClick() {
